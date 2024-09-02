@@ -1,0 +1,120 @@
+.inv .top {
+    height: 250px;
+    width: 100%;
+    background: url('../Images/invrecordcard.png') 100% / cover,
+        rgb(31, 245, 138);
+    position: fixed;
+    top: 0;
+    padding: 40px 5%;
+}
+
+.inv .top .col__top {
+    font-size: 14px;
+    color: #ffffff76
+}
+
+.inv .top .col__bottom {
+    font-size: 30px;
+    font-weight: 600;
+    color: #00000093;
+}
+
+
+
+
+.inv .inv__section {
+    padding: 20px 4%;
+    border-radius: 30px 30px 0 0;
+    background: #fff;
+    padding-bottom: 120px;
+    position: relative;
+    margin-top: 220px;
+    z-index: 5;
+    min-height: calc(100vh - 230px);
+}
+
+.inv .inv__section .record__filter {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 15px;
+    padding: 0 8%;
+}
+
+.inv .inv__section .record__filter .col {
+    height: 55px;
+    width: 100%;
+    font-size: 17px;
+}
+
+.inv .inv__section .record__filter .col.active {
+    color: #00000087;
+    font-weight: 500;
+    border-bottom: 4px solid #009456;
+    color: #009456
+}
+
+.inv .inv__section .record__box {
+    width: 100%;
+    background: linear-gradient(#ffffff, #e0fff2);
+    border-radius: 20px;
+    margin-top: 50px;
+    display: flex;
+    gap: 0 10px;
+    padding: 10px 5px;
+}
+
+.inv .inv__section .record__box .box__left {
+    flex-basis: 35%;
+    width: 100%;
+    height: 150px;
+    margin-top: -40px;
+    border-radius: 15px;
+    margin-left: 5px;
+    background: linear-gradient(rgb(37, 246, 148), #05a359);
+}
+
+.inv .inv__section .record__box .box__left__top {
+    font-size: 13px;
+    color: #00000064
+}
+
+.inv .inv__section .record__box .box__left__bottom {
+    font-size: 22px;
+    font-weight: 600;
+    color: #0000008d;
+}
+
+.inv .inv__section .record__box .box__right {
+    flex-basis: calc(65% - 25px);
+    width: 100%;
+}
+
+.inv .inv__section .record__box .box__right .col {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 3px;
+}
+
+.inv .inv__section .record__box .box__right .col .col__right {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.inv .inv__section .record__box .box__right .col .col__left {
+    font-size: 13px;
+    color: #333;
+}
+
+.no__record {
+    padding: 70px 0;
+    filter: grayscale(80%) brightness(100%) contrast(100%);
+}
+
+.no__record div {
+    font-size: 17px;
+    font-weight: 500;
+    color: #555;
+    margin-top: 10px;
+}

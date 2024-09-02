@@ -1,0 +1,71 @@
+.team .records--container {
+    padding: 15px 4%;
+}
+
+.team .records--container .record--box {
+    width: 100%;
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(66, 251, 81, 0.6), rgba(251, 163, 66, 0));
+    background-size: 100% 209px;
+    background-repeat: no-repeat;
+    background-color: rgb(234, 255, 234);
+    margin-top: 10px;
+    padding: 15px 5%;
+}
+
+.team .records--container .record--box .record--box--top .user--details {
+    display: flex;
+    align-items: center;
+    gap: 0 15px;
+}
+
+.team .records--container .record--box--top .user--pic {
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.team .records--container .record--box--top .user--name {
+    font-size: 23px;
+    font-weight: 800;
+    color: #013e23
+}
+
+.team .records--container .record--box--top .user--ph {
+    font-size: 14px;
+    margin-top: 3px;
+    color: rgba(0, 0, 0, 0.55)
+}
+
+.team .records--container .record--box--bottom {
+    margin-top: 20px;
+}
+
+.team .records--container .record--box--bottom .col {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.team .records--container .record--box--bottom .col .col--right {
+    font-weight: 600;
+    color: #029f4e;
+}
+
+.team .records--container .record--box--bottom .col .col--left {
+    color: #016346;
+    font-weight: 400;
+}
+
+.team .no__data,
+.records .no__data {
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(0, 0, 0, .3);
+    margin-top: 120px;
+}

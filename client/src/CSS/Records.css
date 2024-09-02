@@ -1,0 +1,116 @@
+.records .records__type {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 15px;
+    padding: 0 8%;
+    margin-top: 15px;
+}
+
+.records .records__type .col {
+    padding-bottom: 7px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #0000008a;
+    border-bottom: 2px solid #00000000;
+}
+
+.records .records__type .col.active {
+    border-bottom: 2px solid rgb(1, 124, 71);
+    color: rgb(1, 124, 71)
+}
+
+
+
+
+.records .records--container {
+    padding: 10px 5%;
+}
+
+.records .records--container .record--box {
+    height: 70px;
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.records .records--container .record--box .box--left {
+    display: flex;
+    align-items: center;
+    gap: 0 15px;
+}
+
+.records .records--container .record--box .box--left .box--icon {
+    background: linear-gradient(45deg, rgb(20, 221, 170), #003324a5);
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    color: #ffffff;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.records .records--container .record--box .box--left--right--col .box--col--top {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(1, 124, 71)
+}
+
+.records .records--container .record--box .box--left--right--col .box--col--bottom {
+    font-size: 14px;
+    margin-top: 2px;
+    color: rgba(0, 46, 26, 0.607)
+}
+
+.records .records--container .record--box .item--amount {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+
+.records .records--container .record--box2 {
+    padding: 15px 5%;
+    background: #fff5e2;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+.records .records--container .record--box2 .box--top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.records .records--container .record--box2 .box--top .text--top {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.records .records--container .record--box2 .box--top .text--bottom {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.records .records--container .record--box2 .box--top .box--top--right .order--amount {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.records .records--container .record--box2 .box--bottom {
+    margin-top: 20px;
+}
+
+.records .records--container .record--box2 .box--bottom .col {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 25px;
+}
+
+.records .records--container .record--box2 .box--bottom .col .col--right {
+    font-weight: 500;
+}

@@ -1,0 +1,137 @@
+.activity .top {
+    height: 250px;
+    width: 100%;
+    background: url('../Images/invrecordcard.png') 100% / cover,
+        rgb(31, 245, 138);
+    position: fixed;
+    top: 0;
+    padding: 30px 15% 30px 5%;
+}
+
+.activity .top .ab__txt {
+    font-size: 22px;
+    font-weight: 500;
+    color: #00000098;
+}
+
+.activity .reward__section {
+    padding: 20px 4%;
+    border-radius: 30px 30px 0 0;
+    background: #fff;
+    padding-bottom: 120px;
+    position: relative;
+    margin-top: 220px;
+    z-index: 5;
+    overflow: hidden;
+}
+
+.activity .reward__section .section__top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 10px;
+    margin-top: 10px;
+    padding: 0 4%;
+}
+
+.activity .reward__section .section__top .col {
+    width: 100%;
+    background: #e7fff1;
+    height: 70px;
+    border-radius: 14px;
+}
+
+.activity .reward__section .section__top .col:first-child {
+    transform: translateX(-100vw);
+}
+
+.activity .reward__section .section__top .col:nth-child(2) {
+    transform: translateX(100vw);
+}
+
+.activity .reward__section .section__top .col .col__top {
+    font-size: 13px;
+}
+
+.activity .reward__section .section__top .col .col__bottom {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.activity .reward__section .reward__list__container {
+    padding: 20px 4%;
+}
+
+.activity .reward__section .reward__list {
+    width: 100%;
+    border-radius: 22px;
+    padding: 0px 0;
+}
+
+.activity .reward__section .reward__list .reward__box {
+    display: flex;
+    align-items: center;
+    gap: 0 15px;
+    padding: 15px 4%;
+    margin-top: 5px;
+    background: #e7fff1;
+    border-radius: 10px;
+    transform: translateX(-100vw);
+}
+
+.activity .reward__section .reward__list .reward__box .box__left {
+    flex-basis: calc(100% - 80px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+}
+
+.activity .reward__section .reward__list .reward__box .box__left .box__left__inn {
+    flex-basis: calc(100% - 40px);
+    width: 100%;
+}
+
+.activity .reward__section .reward__list .reward__box .box__left__top {
+    font-size: 13px;
+}
+
+.activity .reward__section .reward__list .reward__box .box__left__top span {
+    font-weight: 500;
+}
+
+.activity .reward__section .reward__list .reward__box .icon {
+    flex-basis: 40px;
+    height: 40px;
+    width: 100%;
+    border-radius: 100px;
+}
+
+.activity .reward__section .reward__list .reward__box .claim__btn {
+    flex-basis: 80px;
+    width: 100%;
+    height: 35px;
+    font-size: 14px;
+    font-weight: 500;
+    background: linear-gradient(#0ce06f, #009456);
+    outline: none;
+    border: none;
+    border-radius: 100px;
+    color: #fff
+}
+
+.activity .reward__section .reward__list .reward__box .box__bar {
+    height: 5px;
+    border-radius: 100px;
+    width: 80%;
+    background: #0000005d;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.activity .reward__section .reward__list .reward__box .box__bar .bar__filled {
+    width: 80%;
+    height: 100%;
+    position: relative;
+    background: #004a25;
+    border-radius: 100px;
+}

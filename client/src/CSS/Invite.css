@@ -1,0 +1,140 @@
+.invite .top {
+    height: 250px;
+    width: 100%;
+    background: url('../Images/invrecordcard.png') 100% / cover,
+        #1ff58a;
+    position: fixed;
+    top: 0;
+    padding: 40px 5%;
+}
+
+.invite .top .col__top {
+    font-size: 14px;
+    color: #ffffff76
+}
+
+.invite .top .col__bottom {
+    font-size: 30px;
+    font-weight: 600;
+    color: #00000093;
+}
+
+
+.invite .invite__section {
+    padding: 20px 4%;
+    border-radius: 30px 30px 0 0;
+    background: #fff;
+    padding-bottom: 120px;
+    position: relative;
+    margin-top: 220px;
+    z-index: 5;
+    overflow: hidden;
+}
+
+.invite .invite__section .section__title {
+    font-size: 25px;
+    font-weight: 600;
+    position: relative;
+    width: auto;
+}
+
+.invite .invite__section .section__title::before {
+    position: absolute;
+    content: '';
+    height: 10px;
+    width: 27%;
+    background: linear-gradient(45deg, #00492100, #004921);
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.invite .team__details .team__data {
+    flex-wrap:nowrap;
+    display: flex;
+    gap: 0 10px;
+    overflow-x: scroll;
+    position: relative;
+    margin-top: 15px;
+}
+
+.invite .team__details .team__data::-webkit-scrollbar {
+    display: none;
+}
+
+.invite .team__details .team__data .col {
+    height: 140px;
+    flex: 0 0 250px;
+    border-radius: 15px;
+    background: linear-gradient(#0ce06f, #009456);
+    padding: 15px 0;
+    transform: translateX(100vw);
+}
+
+.invite .team__data .col .col__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.invite .team__data .col .team__level {
+    display: flex;
+    align-items: center;
+    gap: 0 8px;
+    color: #00000082
+}
+
+.invite .team__data .col .team__level .icon {
+    font-size: 30px;
+}
+
+.invite .team__data .col .team__level span {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.invite .team__data .col .view__icon {
+    padding: 2px 5px;
+    background: #00000082;
+    border-radius: 100px;
+    color: #ffffff97;
+}
+
+.invite .team__data .col .col__bottom {
+    display: flex;
+    justify-content: center;
+    gap: 0 20px;
+    margin-top: 28px;
+}
+
+.invite .team__data .col .col__bottom .inn__col {
+    text-align: center;
+}
+
+.invite .team__data .col .col__bottom .inn__col__top {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffffc5
+}
+
+.invite .team__data .col .col__bottom .inn__col__bottom {
+    font-size: 13px;
+    color: #ffffff87
+}
+
+
+
+
+.invite .invite__section .reward__dis {
+    margin-top: 40px;
+}
+
+.invite .invite__section .reward__dis .section__title::before {
+    width: 35%;
+}
+
+.invite .invite__section .reward__dis .reward__points {
+    margin-top: 15px;
+    padding: 0 3%;
+    font-weight: 500;
+}

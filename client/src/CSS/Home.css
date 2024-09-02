@@ -1,0 +1,244 @@
+.home .top {
+    width: 100%;
+    background: linear-gradient(to bottom,
+            rgba(255, 255, 255, 0) 50%,
+            /* Start transparent at 50% */
+            rgba(0, 0, 0, 0.3) 65%,
+            /* Gradually become more white at 65% */
+            rgba(0, 0, 0, 0.6) 75%,
+            /* Even more white at 75% */
+            rgb(0, 0, 0) 90%,
+            /* Almost complete white at 85% */
+            rgb(0, 0, 0) 100%
+            /* Fully white at 100% */
+        ),
+        url('../Images/enterance2.webp');
+
+    position: fixed;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+}
+
+.home .top .app__logo {
+    display: flex;
+    justify-content: center;
+}
+
+.home .top .options {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0 15px;
+    padding: 0 6%;
+    margin-top: 45px;
+}
+
+.home .top .options .col {
+    display: flex;
+    justify-self: center;
+}
+
+.home .top .options .col .col--icon {
+    height: 50px;
+    width: 50px;
+    background: linear-gradient(45deg, #1de66a, #000000a5);
+    border-radius: 70px;
+    justify-content: center;
+    font-size: 35px;
+    color: #fff;
+}
+
+.home .top .options .col .col--name {
+    font-size: 13px;
+    margin-top: 7px;
+    font-weight: 500;
+    color: #93ffbcc3;
+}
+
+
+.home .product__section {
+    padding: 20px 4%;
+    border-radius: 30px 30px 0 0;
+    padding-bottom: 120px;
+    position: relative;
+    margin-top: 320px;
+    z-index: 5;
+    background: #ffffff;
+    border-top: 5px solid #009456;
+}
+
+.home .product__section .product__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home .product__section .product__top .filter {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: #f7f7f7;
+    border-radius: 100px;
+    overflow: hidden;
+    padding: 2px;
+    gap: 0 2px
+}
+
+.home .product__section .product__top .filter .col {
+    padding: 3px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 100px;
+}
+
+.home .product__section .product__top .filter .col.active {
+    background: #0ce06f;
+    color: #0000007d
+}
+
+.home .product__section .section__title {
+    font-size: 25px;
+    font-weight: 600;
+    position: relative;
+    width: auto;
+    color: #000
+}
+
+.home .product__section .section__title::before {
+    position: absolute;
+    content: '';
+    height: 10px;
+    width: 65%;
+    background: linear-gradient(45deg, #00492100, #004921);
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.home .product__section .product__box {
+    height: 220px;
+    width: 100%;
+    border-radius: 20px;
+    background: linear-gradient(#0ce06f, #009456);
+    display: flex;
+    padding: 10px;
+    margin-top: 20px;
+    transform: translateX(-100vw);
+}
+
+.home .product__box .box__left {
+    flex-basis: 70px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.567);
+    border-radius: 15px;
+    writing-mode: vertical-rl;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #ffffff5e
+}
+
+.home .product__box .box__right {
+    flex-basis: calc(100% - 70px);
+    width: 100%;
+    border-radius: 20px;
+    padding: 20px 0;
+}
+
+.home .product__box .product__details {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 10px;
+}
+
+.home .product__box .product__details .col {
+    text-align: center;
+}
+
+.home .product__box .product__details .col__top {
+    font-size: 14px;
+}
+
+.home .product__box .product__details .col__bottom {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.home .product__box .product__purchase {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 0 20px;
+    margin-top: 20px;
+}
+
+.home .product__box .product__purchase .purchase__amount {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 5px;
+    color: #000000a8
+}
+
+.home .product__box .product__purchase .purchase__btn {
+    text-align: right;
+    padding: 9px 35px;
+    border-radius: 10px 0 10px;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    background: rgb(0, 61, 19);
+    margin-right: 5%;
+    color: rgba(255, 255, 255, 0.603);
+}
+
+
+
+.home .popup__screen {
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    background: #0000005a;
+    z-index: 100000000;
+    position: fixed;
+}
+
+.home .purchase__popup {
+    width: 100%;
+    background: #eefff5;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+            0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 25px 5%;
+}
+
+.home .purchase__popup .conf__txt {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.home .purchase__popup button {
+    height: 50px;
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.home .purchase__popup button.confirm__btn {
+    background: linear-gradient(rgb(125, 243, 174), rgb(0, 128, 73));
+    color: #00000094;
+}
+
+.home .purchase__popup button.cancel__btn {
+    background: linear-gradient(rgb(255, 166, 166), rgb(128, 32, 0));
+    color: #00000094;
+    margin-top: 30px;
+}

@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+.screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(66, 251, 81, 0.6), rgba(251, 163, 66, 0));
+  background-size: 100% 209px;
+  background-repeat: no-repeat;
+  background-color: rgb(234, 255, 234);
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.all-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fh1 {
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+
+
+@keyframes slideInFromLeft {
+  0% {
+      opacity: 0;
+      transform: translateX(-100vw);
+      /* Start off-screen to the left */
+    }
+  
+    70% {
+      opacity: 1;
+      transform: translateX(10%);
+    }
+  
+    100% {
+      transform: translateX(0);
+      /* Settle back to the final position */
+    }
+}
+
+@keyframes slideInFromLeft2 {
+  0% {
+    opacity: 0;
+    transform: translateX(-100vw);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    /* Settle back to the final position */
+  }
+}
+
+@keyframes slideInToLeft2 {
+  0% {
+      opacity: 1;
+      transform: translateX(0);
+      /* Start at the original position */
+    }
+  
+    90% {
+      opacity: 1;
+      transform: translateX(-100vw);
+      /* Slide off-screen */
+    }
+  
+    100% {
+      opacity: 0;
+      transform: translateX(-100vw);
+      /* Quickly fade out just at the end */
+    }
+}
+
+.sliding-from-left2 {
+  animation: slideInFromLeft2 0.5s ease-out forwards;
+}
+
+.sliding-to-left2 {
+  opacity: 1;
+  animation: slideInToLeft2 0.5s forwards;
+}
+
+.sliding-from-left {
+  animation: slideInFromLeft 0.35s cubic-bezier(0.4, 0.0, 0.2, 1) forwards;
+}
+
+
+
+
+
+@keyframes slideInToRight {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(100vw);
+    /* Ends at its intended position */
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100vw);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0vw);
+    /* Ends at its intended position */
+  }
+}
+
+.sliding-element {
+  animation: slideInFromRight 0.5s ease-out forwards;
+}
+
+.sliding-element2 {
+  animation: slideInToRight 0.5s ease-out forwards;
+}
+
+
+@keyframes dropAnimation {
+  0%,
+    20% {
+      opacity: 0;
+      transform: translateY(-100vh);
+      /* Starts off screen */
+    }
+  
+    40% {
+      opacity: 1;
+      transform: translateY(0);
+      /* First contact with the final position */
+    }
+  
+    50% {
+      transform: translateY(-20px);
+      /* Bounce up slightly */
+    }
+  
+    65% {
+      transform: translateY(0);
+      /* Settle back down */
+    }
+  
+    75% {
+      transform: translateY(-10px);
+      /* Small bounce */
+    }
+  
+    100% {
+      transform: translateY(0);
+      /* End at final position */
+    }
+}
+
+@keyframes dropAnimation2 {
+  0% {
+    opacity: 1;
+    transform: translateY(0vh);
+    /* Starts off screen */
+  }
+
+  95% {
+    transform: translateY(100vh);
+  }
+
+  100% {
+    visibility: hidden;
+  }
+}
+
+.element {
+  animation: dropAnimation 0.8s ease-out forwards;
+  /* Adjust timing and easing as needed */
+}
+
+.element2 {
+  animation: dropAnimation2 0.5s ease-out forwards;
+  /* Adjust timing and easing as needed */
+}
+
+
+
+
+@keyframes bounceUpFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100vh);
+    /* Starts below the screen */
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(-10px);
+    /* Overshoots slightly above the final position */
+  }
+
+  70% {
+    transform: translateY(5px);
+    /* Settles down a bit */
+  }
+
+  90% {
+    transform: translateY(-2px);
+    /* Minor bounce up */
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    /* Ends at the final position */
+  }
+}
+
+.element-bounce-up {
+  animation: bounceUpFromBottom 0.7s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+}
